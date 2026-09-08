@@ -1,6 +1,7 @@
 import React from "react";
 import "./index.css";
 import Navbar from "./components/Navbar/Navbar";
+import "./components/MobileFix/MobileFix.css";
 import SupportButton from "./components/SupportButton";
 
 function App() {
