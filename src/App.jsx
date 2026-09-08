@@ -10,7 +10,6 @@ function App() {
         <div className="logo">
           🍃 The Olive Garden
 
-          <SupportButton />
         </div>
 
         <div className="nav-links">
@@ -137,6 +136,7 @@ function App() {
 
       </footer>
 
+      <SupportButton />
 
     </div>
   );
