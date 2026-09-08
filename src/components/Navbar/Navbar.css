@@ -170,3 +170,148 @@ font-size:20px;
 
 
 }
+
+
+
+
+
+
+/* Mobile hamburger animation */
+
+.menu-btn {
+  width: 65px;
+  height: 65px;
+  border-radius: 18px;
+  background: #d4a437;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: transform .3s ease;
+}
+
+.menu-btn span {
+  width: 28px;
+  height: 3px;
+  background:white;
+  border-radius:10px;
+  transition: all .35s ease;
+}
+
+
+/* hamburger turns into X */
+
+.menu-btn.active span:nth-child(1){
+  transform: translateY(9px) rotate(45deg);
+}
+
+.menu-btn.active span:nth-child(2){
+  opacity:0;
+  transform:scale(0);
+}
+
+.menu-btn.active span:nth-child(3){
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+
+/* dropdown animation */
+
+.mobile-menu{
+  opacity:0;
+  transform:translateY(-25px);
+  pointer-events:none;
+  transition:
+  opacity .35s ease,
+  transform .35s ease;
+}
+
+
+.mobile-menu.show{
+  opacity:1;
+  transform:translateY(0);
+  pointer-events:auto;
+}
+
+
+/* Mobile logo size */
+
+@media(max-width:768px){
+
+.logo{
+ font-size:32px;
+}
+
+
+.logo img{
+ width:45px;
+ height:45px;
+}
+
+
+/* button centered */
+
+.menu-btn{
+ width:60px;
+ height:60px;
+}
+
+
+/* hero fixing */
+
+.hero-content{
+ width:90%;
+ margin:auto;
+}
+
+
+.hero-content h1{
+
+ font-size:64px;
+ line-height:1.05;
+ letter-spacing:-1px;
+ max-width:100%;
+
+}
+
+
+.hero-content p{
+
+ font-size:20px;
+ line-height:1.5;
+ max-width:100%;
+
+}
+
+
+.hero-content button{
+
+ margin-top:25px;
+}
+
+
+}
+
+
+/* smaller phones */
+
+@media(max-width:430px){
+
+.hero-content h1{
+
+font-size:52px;
+
+}
+
+
+.hero-content{
+
+padding-left:20px;
+padding-right:20px;
+
+}
+
+}
