@@ -242,3 +242,89 @@ font-size:16px;
 }
 
 }
+
+
+@media (max-width:768px){
+
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    min-height:85vh;
+}
+
+
+.hero-content{
+
+    width:90%;
+    max-width:600px;
+    padding-left:45px;
+    padding-right:20px;
+
+}
+
+
+/* FIX THE HEADING */
+
+.hero-content h1{
+
+    font-size:45px;
+    line-height:1.15;
+    width:max-content;
+    max-width:none;
+    white-space:nowrap;
+
+}
+
+
+
+/* paragraph */
+
+.hero-content p{
+
+    width:100%;
+    max-width:420px;
+    font-size:18px;
+    line-height:1.5;
+
+}
+
+
+/* button */
+
+.hero-content .reserve{
+
+    margin-top:35px;
+    width:auto;
+    padding:18px 40px;
+
+}
+
+}
+
+
+
+@media(max-width:430px){
+
+.hero-content{
+
+    padding-left:35px;
+
+}
+
+
+.hero-content h1{
+
+    font-size:40px;
+    white-space:nowrap;
+
+}
+
+
+.hero-content p{
+
+    max-width:330px;
+
+}
+
+}
