@@ -6,7 +6,6 @@ function Navbar(){
 
 const [open, setOpen] = useState(false);
 
-const [menuOpen,setMenuOpen]=useState(false);
 
 
 return (
