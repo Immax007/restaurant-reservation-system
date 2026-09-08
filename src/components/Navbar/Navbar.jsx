@@ -17,13 +17,13 @@ return (
 </div>
 
 
-<button
-className="menu-button"
-onClick={()=>setOpen(!open)}
+<button 
+  className={`menu-btn ${menuOpen ? "active" : ""}`}
+  onClick={() => setMenuOpen(!menuOpen)}
 >
-
-{open ? "✕" : "☰"}
-
+  <span></span>
+  <span></span>
+  <span></span>
 </button>
 
 
