@@ -144,7 +144,85 @@ justify-content:center;
     transform:translateY(-9px) rotate(-45deg);
 }
 
+.new-links a{
 
+position:relative;
+
+}
+
+
+.new-links a::after{
+
+content:"";
+
+position:absolute;
+
+bottom:-8px;
+
+left:0;
+
+width:0;
+
+height:3px;
+
+background:#d6a634;
+
+transition:.35s ease;
+
+}
+
+
+.new-links a:hover::after{
+
+width:100%;
+
+}
+
+
+.new-links a:first-child{
+
+color:#d6a634;
+
+}
+
+.menu-btn span{
+
+transition:.35s ease;
+
+}
+
+
+.menu-btn.active span:nth-child(1){
+
+transform:translateY(8px) rotate(45deg);
+
+}
+
+
+.menu-btn.active span:nth-child(2){
+
+opacity:0;
+
+}
+
+
+.menu-btn.active span:nth-child(3){
+
+transform:translateY(-8px) rotate(-45deg);
+
+}
+
+
+
+@media(min-width:769px){
+
+.new-links a:first-child::after{
+
+width:100%;
+
+}
+
+}
 
 @media(max-width:768px){
 
@@ -217,7 +295,94 @@ font-size:20px;
 
 
 
+.login-btn,
+.signup-btn{
 
+display:inline-flex;
+
+width:120px;
+
+justify-content:center;
+
+}
+
+
+.new-links{
+
+flex-wrap:wrap;
+
+}
+
+}
+
+
+
+.new-logo{
+
+font-size:22px;
+
+}
+
+
+.menu-btn{
+
+width:55px;
+
+height:55px;
+
+border-radius:16px;
+
+}
+
+
+.menu-btn span{
+
+width:22px;
+
+height:3px;
+
+}
+
+}
+
+.hero-content{
+
+width:90%;
+
+margin:auto;
+
+}
+
+
+.hero-content h1{
+
+font-size:52px;
+
+line-height:1.05;
+
+max-width:500px;
+
+}
+
+
+.hero-content p{
+
+font-size:20px;
+
+line-height:1.5;
+
+max-width:450px;
+
+}
+
+
+.hero-content button{
+
+margin-top:25px;
+
+}
+
+}
 
 /* Mobile hamburger animation */
 
@@ -339,47 +504,69 @@ font-size:20px;
 }
 
 
+@media (max-width:768px){
+
 .new-links{
 
-position:absolute;
-top:100%;
-left:0;
-width:100%;
+    position:absolute;
+    top:100%;
+    left:0;
+    width:100%;
 
-background:#04110f;
+    background:#04110f;
 
-display:flex;
-flex-direction:column;
-align-items:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
 
-overflow:hidden;
+    gap:25px;
 
-max-height:0;
-opacity:0;
+    padding:30px 0;
 
-transform:translateY(-20px);
+    max-height:0;
+    overflow:hidden;
 
-transition:
-max-height .4s ease,
-opacity .3s ease,
-transform .4s ease;
+    opacity:0;
+
+    transform:translateY(-25px);
+
+    transition:
+    max-height .4s ease,
+    opacity .3s ease,
+    transform .4s ease;
 
 }
 
 
 .new-links.show-menu{
 
-max-height:500px;
+    max-height:500px;
 
-opacity:1;
+    opacity:1;
 
-transform:translateY(0);
+    transform:translateY(0);
+
+}
+
+}
+
+.new-links a{
+
+    color:white;
+
+    transition:.3s ease;
+
+}
+
+
+.new-links a:hover,
+.new-links a:active{
+
+    color:#d6a634;
 
 }
 
 }
-
-
 
 
 
