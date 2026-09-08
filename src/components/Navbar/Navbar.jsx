@@ -18,9 +18,9 @@ return (
 </div>
 
 
-<button 
-  className={`menu-btn ${menuOpen ? "active" : ""}`}
-  onClick={() => setMenuOpen(!menuOpen)}
+<button
+className={`menu-btn ${open ? "active" : ""}`}
+onClick={() => setOpen(!open)}
 >
   <span></span>
   <span></span>
