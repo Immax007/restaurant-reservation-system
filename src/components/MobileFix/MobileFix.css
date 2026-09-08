@@ -40,3 +40,101 @@ font-size:16px;
 
 
 }
+
+
+
+/* HERO MOBILE DESKTOP STYLE OVERRIDE */
+
+@media (max-width: 768px){
+
+.hero{
+    min-height: 85vh;
+    height: auto;
+    display:flex;
+    align-items:center;
+}
+
+
+.hero-content{
+    width:100%;
+    max-width:600px;
+    padding:0 40px;
+    margin-top:0;
+}
+
+
+.hero h1{
+    font-size:clamp(42px,8vw,70px);
+    line-height:1.05;
+    max-width:520px;
+    letter-spacing:-1px;
+}
+
+
+/* prevent mobile word stacking */
+.hero h1 span,
+.hero h1{
+    word-break:normal;
+    overflow-wrap:normal;
+}
+
+
+.hero p{
+    font-size:22px;
+    line-height:1.5;
+    max-width:600px;
+    margin-top:35px;
+}
+
+
+.hero button{
+    margin-top:45px;
+    padding:20px 45px;
+    font-size:22px;
+}
+
+
+/* keep image position like desktop */
+
+.hero{
+    background-position:center;
+    background-size:cover;
+}
+
+
+
+}
+
+
+/* SMALL PHONES */
+
+@media(max-width:430px){
+
+.hero{
+    min-height:80vh;
+}
+
+
+.hero-content{
+    padding:0 30px;
+}
+
+
+.hero h1{
+    font-size:48px;
+    line-height:1.1;
+}
+
+
+.hero p{
+    font-size:18px;
+    max-width:330px;
+}
+
+
+.hero button{
+    font-size:18px;
+    padding:18px 35px;
+}
+
+}
