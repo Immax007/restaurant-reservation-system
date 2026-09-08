@@ -1,10 +1,10 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 
 
 function Navbar(){
 
-const [open,setOpen] = useState(false);
+const [open, setOpen] = useState(false);
 
 
 return (
@@ -17,29 +17,37 @@ return (
 </div>
 
 
-<button 
+<button
 className="menu-button"
 onClick={()=>setOpen(!open)}
 >
-☰
+
+{open ? "✕" : "☰"}
+
 </button>
 
 
 
-<div className={`new-links ${open ? "show-menu":""}`}>
+<div className={`new-links ${open ? "show-menu" : ""}`}>
 
 <a href="#">Home</a>
+
 <a href="#">Menu</a>
+
 <a href="#">About</a>
+
 <a href="#">Contact</a>
+
 
 <button className="login-btn">
 Login
 </button>
 
+
 <button className="signup-btn">
 Sign Up
 </button>
+
 
 </div>
 
