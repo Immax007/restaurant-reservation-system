@@ -5,19 +5,16 @@ function SupportButton(){
 
 return (
 
+<div className="support-wrapper">
+
 <button className="support-button">
-
-💬
-
-<span>
-Customer Support
-</span>
-
+  💬
 </button>
+
+</div>
 
 );
 
 }
-
 
 export default SupportButton;
