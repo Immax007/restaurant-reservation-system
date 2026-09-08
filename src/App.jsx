@@ -1,5 +1,6 @@
 import React from "react";
 import "./index.css";
+import SupportButton from "./components/SupportButton";
 
 function App() {
   return (
@@ -8,6 +9,8 @@ function App() {
       <nav className="navbar">
         <div className="logo">
           🍃 The Olive Garden
+
+          <SupportButton />
         </div>
 
         <div className="nav-links">
