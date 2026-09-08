@@ -1,30 +1,13 @@
 import React from "react";
 import "./index.css";
+import Navbar from "./components/Navbar/Navbar";
 import SupportButton from "./components/SupportButton";
 
 function App() {
   return (
     <div className="app">
 
-      <nav className="navbar">
-        <div className="logo">
-          🍃 The Olive Garden
-
-        </div>
-
-        <div className="nav-links">
-          <a href="#">Home</a>
-          <a href="#">Menu</a>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
-          <button className="login">
-            Login
-          </button>
-          <button className="signup">
-            Sign Up
-          </button>
-        </div>
-      </nav>
+      <Navbar/>
 
 
       <section className="hero">
