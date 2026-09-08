@@ -138,3 +138,107 @@ font-size:16px;
 }
 
 }
+
+
+
+/* HERO MOBILE DESKTOP STYLE */
+
+@media (max-width:768px){
+
+.hero{
+    min-height:85vh;
+    display:flex;
+    align-items:center;
+    background-position:center;
+}
+
+
+.hero-content{
+
+    width:100%;
+    padding:0 35px;
+
+}
+
+
+/* Keep heading like desktop */
+
+.hero-content h1{
+
+    font-size:48px;
+    line-height:1.1;
+    letter-spacing:-1px;
+    max-width:500px;
+    white-space:nowrap;
+
+}
+
+
+
+/* paragraph alignment */
+
+.hero-content p{
+
+    font-size:18px;
+    line-height:1.6;
+    max-width:380px;
+    margin-top:30px;
+
+}
+
+
+/* reserve button */
+
+.reserve{
+
+    margin-top:35px;
+    padding:18px 35px;
+    font-size:18px;
+
+}
+
+
+}
+
+
+
+@media(max-width:430px){
+
+.hero{
+
+    min-height:80vh;
+
+}
+
+
+.hero-content{
+
+    padding:0 30px;
+
+}
+
+
+.hero-content h1{
+
+    font-size:42px;
+    white-space:normal;
+    max-width:360px;
+
+}
+
+
+.hero-content p{
+
+    font-size:17px;
+    max-width:330px;
+
+}
+
+
+.reserve{
+
+    padding:16px 30px;
+
+}
+
+}
